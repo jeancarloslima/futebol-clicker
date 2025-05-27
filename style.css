@@ -21,12 +21,17 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .infos-clicker {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+#contador {
+    font-size: 1.5rem;
 }
 
 #btn-clicador {
