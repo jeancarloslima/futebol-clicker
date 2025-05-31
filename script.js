@@ -5,6 +5,11 @@ const melhorias = document.querySelectorAll(".container-melhorias-teste ul li bu
 let contador = 0;
 let multiplicador = 0.1;
 
+function atualizaElementos() {
+    elementoContador.textContent = contador.toFixed(1);
+    elementoMultiplicador.textContent = "+ " + multiplicador;
+}
+
 btnCliclador.addEventListener('click', () => {
     contador += multiplicador;
     atualizaElementos();
@@ -16,8 +21,3 @@ melhorias.forEach(melhoria => {
         atualizaElementos();
     })
 })
-
-function atualizaElementos() {
-    elementoContador.textContent = contador.toFixed(1);
-    elementoMultiplicador.textContent = "+ " + multiplicador;
-}
