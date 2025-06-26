@@ -21,3 +21,8 @@ melhorias.forEach(melhoria => {
         atualizaElementos();
     })
 })
+
+setInterval(() => {
+    contador += multiplicador;
+    atualizaElementos();
+}, 1000);
